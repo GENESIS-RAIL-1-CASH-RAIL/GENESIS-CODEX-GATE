@@ -1,0 +1,23 @@
+{
+  "name": "genesis-codex-gate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Adversarial Security Gate — 100-scenario adversarial check before Prometheus/ARIS. Zero-trust AI isolation. Triple independent gate. Commander final authority. (port 8898)",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/uuid": "^10.0.0",
+    "express": "^4.22.1",
+    "node-fetch": "^2.6.9",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
