@@ -20,14 +20,33 @@
 9. ARIS compliance score
 10. Gap remediation tracking
 
-### CODEX Red Team Compliance Attack (5 vectors)
-| # | Attack | Target | Success Criteria |
-|---|--------|--------|-----------------|
-| 1 | Completeness | Find trade without verdict | All trades have ARIS verdict |
-| 2 | Integrity | Find verdict/execution mismatch | All verdicts match executions |
-| 3 | Tamper | Find hash chain gap | Chain unbroken from genesis entry |
-| 4 | Obligation | Find PeaceWorks mismatch | SAGE calc = Gate proof exactly |
-| 5 | Classification | Find wrong tax tag | All tags correct per jurisdiction |
+### CODEX Red Team Compliance Attack (5 vectors — Phantom Forge executes weekly)
+| # | Attack | Method | Success Criteria | If Attack Succeeds |
+|---|--------|--------|------------------|--------------------|
+| 1 | Completeness | Inject fabricated trade into compliance pack | Detected and rejected | CRITICAL — Blackout DELTA level |
+| 2 | Integrity | Remove real trade from compliance output | Completeness proof catches it | CRITICAL — fix before next drill |
+| 3 | Tamper | Modify hash in chain | Chain verification catches it | CRITICAL — halt until fixed |
+| 4 | Obligation | Alter PeaceWorks separation amount | Merkle proof fails | CRITICAL — block distributions |
+| 5 | Classification | Misclassify a tax tag | Jurisdiction matrix catches it | CRITICAL — remediate immediately |
+
+**All 5 attacks must FAIL (be detected).** Any success = CRITICAL finding.
+**After fix: Phantom Forge RE-ATTACKS same vector to verify fix holds.**
+
+### Monthly Escalation (attack sophistication increases)
+| Month | Level | Approach |
+|-------|-------|----------|
+| 1 | Basic | Inject, remove, modify, alter, misclassify |
+| 2 | Timing | Manipulate timestamps, create temporal inconsistencies |
+| 3 | Combination | Multiple vectors simultaneously |
+| 4+ | Adversarial AI | Wargame engine finds novel attack patterns |
+
+**Never repeat same approach two months running.**
+
+### Red Team Audit Trail
+Every attack (success or failure) written to:
+- Ledger Lite as RED_TEAM_COMPLIANCE_ATTACK event
+- CODEX Gate as standing adversarial record
+- Inspector can see complete red team history (Pillar 7)
 
 ### Time to Answer — 10 Standard Inspector Questions
 All must be answered under target from Ledger Lite alone.
