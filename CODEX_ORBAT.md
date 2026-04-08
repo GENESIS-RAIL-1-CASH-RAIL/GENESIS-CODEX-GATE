@@ -63,6 +63,9 @@ ORBAT solves this by giving every PRODUCER of plans/decisions/decrees/weapons (P
 | Unit | Port | Role | New |
 |---|---|---|---|
 | **GENESIS-CHECKSUM** | 8898 | 4-layer behavioural integrity watchdog (L1 process / L2 heartbeat / L3 counter delta / L4 e2e). ARIS Decree 222 promotion gate. WD-049. | ✅ 2026-04-07 |
+| **GENESIS-MEASUREMENT-INTEGRITY-LAYER (MIL)** | 8920 | Equal authority to TRIBUNAL. Veto power on DNA promotion + Spark filings + addendum coefficient claims. 5 components: Metric Contract Registry + Shadow Evaluation Engine + Assumptions Ledger + Evidence Standard + TRIBUNAL interaction matrix. **Standing Order #17 candidate (TIER 0).** Diamond K from Spark #046 4-AI loop. | ⏳ Build queued 2026-04-09 |
+| **GENESIS-REGULATORY-MONITOR** | TBD | Regulatory enforcement signal scraper (CFTC Commitments of Traders, SEC Wells notices, FCA enforcement actions, ESMA short positions). Plus IP rotation discipline + tax/reporting layer. Diamond L from Spark #046 (Mistral catch — *"first Wells notice could kill the stack overnight"*). **Tier 1 mandatory before any cadence promotion.** | ⏳ Build queued 2026-04-09 |
+| **GENESIS-PARTNER-TELEMETRY-FEED** | TBD | Re-shaped Mirror Clones architecture per ChatGPT R4 Deliverable 5. WebSocket primary / REST fallback. Push-only feed, fixed schema, no internal identities. Replaces the Mirror Clones "agents inside venue infrastructure" architecture which was REFUTED by both ChatGPT and Mistral. **Deferred to Phase 3 (Days 61-90) — needs first signed partnership.** | ⏳ Deferred to Phase 3 |
 | **GENESIS-CHECKSUM-DEADMAN** | 8899 | External dead-man switch. Battle Stations CHARLIE if CHECKSUM silent 90s. | ✅ 2026-04-07 |
 | **GENESIS-OVERWATCH** | 8902 | Hub-and-spoke intel fusion centre. Hierarchical Bayesian fusion over LATTICE-ROUTER DAG. WD-050. | ✅ 2026-04-07 |
 | **GENESIS-OVERWATCH-DEADMAN** | 8901 | Dead-man for OVERWATCH | ✅ 2026-04-07 |
@@ -280,7 +283,7 @@ Critical decrees with current operational impact:
 - **Decree #222** — CHECKSUM Promotion Gate (4 conditions: 7d uptime, zero FP, ≥1 TP, ≥1 dead-man test). **ACTIVE — promotion clock running 0.55 days as of 2026-04-08 morning.**
 - **Decree #223** — Tribunal Conservative-Unanimous Doctrine. 10-section ChatGPT-amended structure. 9 constitutional clauses (voting, fail-safe, no-wake, Petrov override, amendment, Iron Halo, contamination, budget, precedent). **ACTIVE.**
 
-### Standing Orders (12 total)
+### Standing Orders (18 total — 15 ACTIVE + 3 PROPOSED from Spark #046 closure)
 1. GOODNIGHT PROTOCOL — when Commander says goodnight, execute Usual Suspects + session-close
 2. RECOVERY FIRST PORT OF CALL — `https://github.com/GENESIS-RAIL-1-CASH-RAIL/GENESIS-SOP-AI-ROADMAP-RAIL-1`
 3. EXPECT HUMAN FAILURE
