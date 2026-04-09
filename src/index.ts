@@ -356,6 +356,82 @@ app.get("/desk/history", (_req, res) => {
 });
 
 // ══════════════════════════════════════════════════════════════
+// WITNESS VERDICT ENDPOINTS (2) — BROKEN WIRE FIX 2026-04-09
+// ══════════════════════════════════════════════════════════════
+// ARIS was calling these endpoints but they didn't exist.
+// See witness-journal.service.ts in GENESIS-ARIS-SUPREME-COURT.
+
+// In-memory verdict store (max 1024, LRU eviction)
+interface StoredVerdict {
+  verdictId: string;
+  verdict: string;
+  executionPayloadHashHex: string;
+  schemaId: string;
+  schemaVersion: string;
+  tradeIntentId: string;
+  decisionTimestampMs: number;
+  monotonicNs: string;
+  verdictReasonCode: string;
+  completeRationale: string;
+  storedAt: number;
+}
+
+const verdictStore: StoredVerdict[] = [];
+const MAX_STORED_VERDICTS = 1024;
+
+/**
+ * POST /v1/witness/verdict
+ * ARIS delivers canonical verdict for witness audit trail.
+ * Validates required fields, stores in LRU array (max 1024), returns 202.
+ */
+app.post("/v1/witness/verdict", (req, res) => {
+  const body = req.body;
+
+  // Validate required fields
+  if (!body.verdictId || !body.verdict || !body.executionPayloadHashHex) {
+    res.status(400).json({
+      error: "Missing required fields: verdictId, verdict, executionPayloadHashHex",
+    });
+    return;
+  }
+
+  // Type-safe storage
+  const verdict: StoredVerdict = {
+    verdictId: String(body.verdictId),
+    verdict: String(body.verdict),
+    executionPayloadHashHex: String(body.executionPayloadHashHex),
+    schemaId: String(body.schemaId || ""),
+    schemaVersion: String(body.schemaVersion || ""),
+    tradeIntentId: String(body.tradeIntentId || ""),
+    decisionTimestampMs: Number(body.decisionTimestampMs || 0),
+    monotonicNs: String(body.monotonicNs || ""),
+    verdictReasonCode: String(body.verdictReasonCode || ""),
+    completeRationale: String(body.completeRationale || ""),
+    storedAt: Date.now(),
+  };
+
+  verdictStore.unshift(verdict);
+  if (verdictStore.length > MAX_STORED_VERDICTS) {
+    verdictStore.pop();
+  }
+
+  res.status(202).json({ accepted: true, verdictId: verdict.verdictId });
+});
+
+/**
+ * GET /v1/witness/verdicts
+ * Query the last 50 stored verdicts from witness store.
+ */
+app.get("/v1/witness/verdicts", (req, res) => {
+  const limit = Math.min(parseInt(req.query.limit as string) || 50, 50);
+  res.json({
+    count: verdictStore.length,
+    queried: Math.min(limit, verdictStore.length),
+    verdicts: verdictStore.slice(0, limit),
+  });
+});
+
+// ══════════════════════════════════════════════════════════════
 // HEALTH ENDPOINT (1)
 // ══════════════════════════════════════════════════════════════
 
@@ -384,7 +460,10 @@ app.get("/health", (_req, res) => {
     commanderDesk: {
       pending: commanderDesk.getPending().length,
     },
-    endpoints: 19,
+    witness: {
+      storedVerdicts: verdictStore.length,
+    },
+    endpoints: 21,
     loops: 3,
     bootTime: new Date(bootTime).toISOString(),
   });
@@ -399,7 +478,7 @@ app.listen(PORT, async () => {
   console.log("================================================================");
   console.log(`  ${SERVICE_NAME} v${VERSION}`);
   console.log(`  Port: ${PORT}`);
-  console.log(`  Endpoints: 19 | Loops: 3`);
+  console.log(`  Endpoints: 21 | Loops: 3`);
   console.log("================================================================");
   console.log("");
   console.log("  ADVERSARIAL SECURITY GATE — Zero Trust AI Governance");
