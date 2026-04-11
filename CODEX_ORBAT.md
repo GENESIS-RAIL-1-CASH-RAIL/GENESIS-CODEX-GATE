@@ -283,7 +283,7 @@ Critical decrees with current operational impact:
 - **Decree #222** — CHECKSUM Promotion Gate (4 conditions: 7d uptime, zero FP, ≥1 TP, ≥1 dead-man test). **ACTIVE — promotion clock running 0.55 days as of 2026-04-08 morning.**
 - **Decree #223** — Tribunal Conservative-Unanimous Doctrine. 10-section ChatGPT-amended structure. 9 constitutional clauses (voting, fail-safe, no-wake, Petrov override, amendment, Iron Halo, contamination, budget, precedent). **ACTIVE.**
 
-### Standing Orders (18 total — 15 ACTIVE + 3 PROPOSED from Spark #046 closure)
+### Standing Orders (35 total — 32 ACTIVE + 3 PROPOSED from Spark #046 closure)
 1. GOODNIGHT PROTOCOL — when Commander says goodnight, execute Usual Suspects + session-close
 2. RECOVERY FIRST PORT OF CALL — `https://github.com/GENESIS-RAIL-1-CASH-RAIL/GENESIS-SOP-AI-ROADMAP-RAIL-1`
 3. EXPECT HUMAN FAILURE
@@ -296,6 +296,12 @@ Critical decrees with current operational impact:
 10. CHAT COMMAND WORKFLOW (filed 2026-04-07 night)
 11. **TIER 0:** BUILD IT ONCE (filed 2026-04-07 night) — Commander's contractor doctrine
 12. CODEX AS CANONICAL REFERENCE LAYER (filed 2026-04-08 morning) — paired with Central Library, same truth, two encodings
+13-19. Filed 2026-04-08 (Sparks #046-#049 era): Response line cap, no trailing questions, no SO reminders, Commander premium source, Shopkeeper doctrine, Haiku default sub-agents, B2 batched brief
+20-29. Filed 2026-04-09: Git push autonomous, capability filing doctrine, rail cadence ladder, follow the pipe, autonomous mission authority, spot reusable patterns
+30-31. **HARD LAW:** Model-T19 18-file wave structure + Money Template GO/NO-GO gate (filed 2026-04-09)
+32-33. Filed 2026-04-10: Spark methodology SOP, mandatory SOP read on session start
+34. **HARD LAW:** EC2 governance — Claude's job ends at "pushed to GitHub" (filed 2026-04-10)
+35. **HARD LAW:** T19 AGENT AUTO-ENFORCEMENT — every code-writing agent auto-checks T19 compliance, repairs gaps before reporting (filed 2026-04-12)
 
 ### TIER 0 Doctrines (the constitutional ones)
 - **Safety > Alpha, zero compromise** (Standing Order #7)
