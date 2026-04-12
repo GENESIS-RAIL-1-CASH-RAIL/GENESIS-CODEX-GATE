@@ -302,6 +302,13 @@ Critical decrees with current operational impact:
 32-33. Filed 2026-04-10: Spark methodology SOP, mandatory SOP read on session start
 34. **HARD LAW:** EC2 governance — Claude's job ends at "pushed to GitHub" (filed 2026-04-10)
 35. **HARD LAW:** T19 AGENT AUTO-ENFORCEMENT — every code-writing agent auto-checks T19 compliance, repairs gaps before reporting (filed 2026-04-12)
+36. **HARD LAW:** SMOKE TEST PRE-FLIGHT — `node scripts/smoke-test.js` before any canary/deployment. All 10 GREEN + payload admitted = GO (filed 2026-04-12)
+
+### PeaceWorks Standing Orders
+- **PW-SO-001:** Autonomous Site Acquisition — swarm-driven land scouting, autonomise at every point (filed 2026-04-12)
+
+### Skunkworks Missions (13 loop + 2 single-leg)
+- SK-013 African Land Acquisition: **CODED** — Site Selection Engine (port 9300, T19, 20 seed candidates, 8-criteria WSM)
 
 ### TIER 0 Doctrines (the constitutional ones)
 - **Safety > Alpha, zero compromise** (Standing Order #7)
