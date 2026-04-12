@@ -283,7 +283,7 @@ Critical decrees with current operational impact:
 - **Decree #222** — CHECKSUM Promotion Gate (4 conditions: 7d uptime, zero FP, ≥1 TP, ≥1 dead-man test). **ACTIVE — promotion clock running 0.55 days as of 2026-04-08 morning.**
 - **Decree #223** — Tribunal Conservative-Unanimous Doctrine. 10-section ChatGPT-amended structure. 9 constitutional clauses (voting, fail-safe, no-wake, Petrov override, amendment, Iron Halo, contamination, budget, precedent). **ACTIVE.**
 
-### Standing Orders (35 total — 32 ACTIVE + 3 PROPOSED from Spark #046 closure)
+### Standing Orders (35 total — ALL 35 ACTIVE, 0 PROPOSED. SO #16/17/18 accepted 2026-04-12)
 1. GOODNIGHT PROTOCOL — when Commander says goodnight, execute Usual Suspects + session-close
 2. RECOVERY FIRST PORT OF CALL — `https://github.com/GENESIS-RAIL-1-CASH-RAIL/GENESIS-SOP-AI-ROADMAP-RAIL-1`
 3. EXPECT HUMAN FAILURE
