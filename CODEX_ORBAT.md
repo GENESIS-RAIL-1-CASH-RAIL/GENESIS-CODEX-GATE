@@ -446,6 +446,10 @@ Drift correction bundled: yesterday I (Claude) mislabeled "Codex" as a third AI 
 
 **Future versions:** Walked every Goodnight Protocol Step 4.5. Anything added/retired gets reflected here. Gap and abundance sections refreshed.
 
+**v1.1 — 2026-04-16** — Spark #061 (SPARK-061 HDP-HMM Latent State Discovery) added to Compartment 4 INTELLIGENCE + Compartment 8 ENGINEERING queue. BEDROCK. 5 diamonds. Closes SO #45 Gate 3 via Alpha Credibility Score. New Cash Rail service slot `genesis-hdp-hmm` port 8861 reserved. 4 engineer-weeks MVP build queued per SO #33 + SO #46 (hour-zero Spark discipline).
+
+Spark count through v1.1: 61 BEDROCK sparks (latest SPARK-061).
+
 ---
 
-**END OF ORBAT v1.0 — Genesis Battlegroup Order of Battle**
+**END OF ORBAT v1.1 — Genesis Battlegroup Order of Battle**
