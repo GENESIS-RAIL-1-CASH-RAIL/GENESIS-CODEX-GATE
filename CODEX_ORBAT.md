@@ -453,3 +453,4 @@ Spark count through v1.3: 64 BEDROCK sparks (latest SPARK-063 Recon Regiment, fi
 ---
 
 **END OF ORBAT v1.3 — Genesis Battlegroup Order of Battle**
+SPARK-064 Mission-Set Battlegroup Doctrine (David vs Goliath) — Compartment 3 OFFENCE + Compartment 4 INTELLIGENCE. Filed 2026-04-18.
