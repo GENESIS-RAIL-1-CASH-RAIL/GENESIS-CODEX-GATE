@@ -448,8 +448,8 @@ Drift correction bundled: yesterday I (Claude) mislabeled "Codex" as a third AI 
 
 **v1.1 — 2026-04-16** — Spark #061 (SPARK-061 HDP-HMM Latent State Discovery) added to Compartment 4 INTELLIGENCE + Compartment 8 ENGINEERING queue. BEDROCK. 5 diamonds. Closes SO #45 Gate 3 via Alpha Credibility Score. New Cash Rail service slot `genesis-hdp-hmm` port 8861 reserved. 4 engineer-weeks MVP build queued per SO #33 + SO #46 (hour-zero Spark discipline).
 
-Spark count through v1.2: 63 BEDROCK sparks (latest SPARK-063 Recon Regiment, filed 2026-04-18). Sparks #062 Nimrod C2 + #063 Recon Regiment added to Compartment 4 INTELLIGENCE + Compartment 5 RECON.
+Spark count through v1.3: 64 BEDROCK sparks (latest SPARK-063 Recon Regiment, filed 2026-04-18). Sparks #062 Nimrod C2 + #063 Recon Regiment added to Compartment 4 INTELLIGENCE + Compartment 5 RECON.
 
 ---
 
-**END OF ORBAT v1.2 — Genesis Battlegroup Order of Battle**
+**END OF ORBAT v1.3 — Genesis Battlegroup Order of Battle**
